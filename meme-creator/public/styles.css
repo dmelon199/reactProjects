@@ -80,7 +80,8 @@ header > p {
 
 .meme-form > input {
   width: 45%;
-  height: 40px;
+  margin: 0 10px 0px 0px;
+  padding: 10px;
 }
 
 .meme-form > button {
@@ -90,6 +91,8 @@ header > p {
   letter-spacing: 1.5px;
   color: white;
   background: #6441A5;
+  margin: 0 0 0 10px;
+  padding: 10px;
 }
 
 .meme-form > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
