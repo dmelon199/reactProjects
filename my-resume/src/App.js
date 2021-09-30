@@ -1,18 +1,24 @@
 
-import './App.css';
+import './styles.css';
+import React from 'react'
 
 
-/* COMPONENTS */
-import Header from './components/Header';
-import Hi from './components/Hi';
+import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
+import { render } from 'react-dom';
+
+
+//pages
+import MainPage from "./pages/MainPage";
+import Lithia from "./pages/Lithia";
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Hi />
-    </div>
-  );
+  return (  <Router>
+      <Switch>
+        <Route exact path="/" component={MainPage}/>
+        <Route exact path="/lithia" component={Lithia}/>
+      </Switch>
+    </Router>
+  )
 }
 
 export default App;

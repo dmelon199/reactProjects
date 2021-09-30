@@ -1,0 +1,248 @@
+.loading-screen {
+  background: #000;
+  height: 100vh; 
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  opacity:1;
+  transition: opacity 1s ease 0s;
+}
+
+.loading-screen h1 {
+  color: #fff;
+  font-weight: bold;
+}
+
+.body-content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  padding: 10px;
+  color: white;
+}
+
+.body h1 {
+  font-weight: 900;
+  text-align: left;
+  display: block;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #04a9e0;
+  color: #fff;
+}
+
+/* HERO */
+.welcome-hero {
+  height: 60vh;
+  align-items: center;
+}
+
+/* LEFT HERO */
+.welcome-left-hero {
+  background: #04a9e0;
+  justify-content: flex-end;
+}
+.welcome-left-hero .content {
+  width: min-content;
+  text-align: right;
+}
+.welcome-left-hero .content p {
+  color: #fff;
+  font-size: 10vw;
+  line-height: 9vw;
+  font-weight: 900;
+}
+
+/* RIGHT HERO */
+.welcome-right-hero {
+  background: #F8F8F8;
+}
+
+.welcome-right-hero li {
+  list-style: none;
+}
+
+.welcome-right-hero li img {
+  width: 10vh;
+  height: auto;
+}
+
+.welcome-hero .filter-color {
+  filter: invert(74%) sepia(63%) saturate(562%) hue-rotate(279deg) brightness(83%) contrast(81%);
+}
+
+.welcome-hero .filter-color:hover {
+  filter: invert(50%) sepia(14%) saturate(1319%) hue-rotate(262deg) brightness(89%) contrast(89%);
+}
+
+.welcome-hero li:hover  {
+    transform: translateY(5px);
+}
+
+.welcome-hero li {
+  display: inline-block;
+  transition: all .3s linear;
+} 
+
+/* MY PROJECTS */
+.slideshow .react-multi-carousel-list  {
+ min-height: 350px;
+}
+
+.position-experience li::marker {
+  color: red;
+}
+.position li.position-info::before {
+  content: "";
+  background: white;
+  display: block;
+  right: 46px;
+  top: 38px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 3px solid RED;
+  position: relative;
+  z-index:1;
+}
+.position li {
+  position: relative;
+}
+
+.position li.position-info::after {
+    width: 3px;
+    height: calc(100% + 36px);
+    content: "";
+    display: block;
+    position: absolute;
+    left: -19px;
+    top: 38px;
+    background: red;
+    transform: scaleY(1);
+    transition: transform 0.4s ease 0s;
+    transform-origin: center top;
+}
+
+.position.intern li.position-info::after {
+  background: transparent;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* SKILLS */
+.skill-column {display: inline-block;width: 20%;text-align: center;margin: 20px 0px}
+
+
+
+
+
+/* Desktop PROJECTS PAGE */
+.desktop-skin {
+  position: relative;
+  background-size: 100%!important;
+  background-position: center!important;
+  background: 0 0;
+  margin: 0 auto;
+  height: 895px;
+  width: 1100px;
+}
+
+.desktop-skin .skin-overlay {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 81;
+}
+
+.viewport {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  vertical-align: top;
+  height: 595px;
+  z-index: 24;
+  width: 1015px;
+  margin: 41px 42px;
+}
+
+.desktop_screen {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.scroll-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  outline: none;
+  cursor: -webkit-grab;
+}
+
+/* Mobile PROJECTS PAGE */
+.mobile-skin {
+  position: relative;
+  background-size: 100%!important;
+  background-position: center!important;
+  background: 0 0;
+  margin: 0 auto;
+  height: 855px;
+  width: 420px;
+}
+
+.mobile-skin-overlay {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 81;
+}
+
+.mobile-viewport {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  vertical-align: top;
+  height: 815px;
+  z-index: 24;
+  width: 375px;
+  margin: 17px 22px;
+}
+
+.mobile_screen {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.mobile-scroll-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  outline: none;
+  cursor: -webkit-grab;
+}
