@@ -4,7 +4,7 @@ import Zoom from 'react-reveal/Zoom';
 
 function WelcomeSection() {
     return (
-        <div className="welcome-hero-wrapper d-flex flex-column flex-md-row p-5">
+        <div className="welcome-hero-wrapper d-flex flex-column flex-md-row px-5 pb-3">
             <div className="welcome-hero welcome-left-hero d-flex col-xs-12 col-md-6 pb-4 pb-md-0 pl-md-0 pr-3">
                 <div className="content">
                     <Zoom>

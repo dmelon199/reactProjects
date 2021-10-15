@@ -1,11 +1,11 @@
 
 import React from "react"
 
-function Lithia() {
+function Avondale() {
     return (
         <div>
             <div className="body-content container-xl py-5">
-                <h1>Lithia Motors Desktop and Mobile Mockups</h1>
+                <h1>Avondale Select Desktop and Mobile Mockups</h1>
                 <div className="desktop-wrapper py-5">
                     <h2>Desktop:</h2>
                     <div className="desktop-skin">
@@ -14,7 +14,7 @@ function Lithia() {
                             <div className="desktop_screen">
                                 <div className="scroll-wrap" tabIndex="5003">
                                     <div height="auto">
-                                        <img src="/images/desktop/lithia-index.jpg" height="auto" width="1015px"/>
+                                        <img src="/images/desktop/avondale-index.jpg" height="auto" width="1015px"/>
                                     </div>
                                 </div>
                             </div>
@@ -42,4 +42,4 @@ function Lithia() {
 }
 
 
-export default Lithia
+export default Avondale

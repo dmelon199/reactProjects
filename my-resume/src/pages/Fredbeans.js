@@ -1,11 +1,11 @@
 
 import React from "react"
 
-function Lithia() {
+function Fredbeans() {
     return (
         <div>
             <div className="body-content container-xl py-5">
-                <h1>Lithia Motors Desktop and Mobile Mockups</h1>
+                <h1>Fred Beans Auto Group Desktop and Mobile Mockups</h1>
                 <div className="desktop-wrapper py-5">
                     <h2>Desktop:</h2>
                     <div className="desktop-skin">
@@ -14,7 +14,7 @@ function Lithia() {
                             <div className="desktop_screen">
                                 <div className="scroll-wrap" tabIndex="5003">
                                     <div height="auto">
-                                        <img src="/images/desktop/lithia-index.jpg" height="auto" width="1015px"/>
+                                        <img src="/images/desktop/fredbeans-index.jpg" height="auto" width="1015px"/>
                                     </div>
                                 </div>
                             </div>
@@ -29,7 +29,7 @@ function Lithia() {
                             <div className="mobile_screen">
                                 <div className="mobile-scroll-wrap" tabIndex="5003">
                                     <div height="6674px">
-                                        <img src="/images/mobile/lithia-mobile-index.jpg" height="6674px" width="365px"/>
+                                        <img src="/images/mobile/saltlake-mobile-index.jpg" height="auto" width="365px"/>
                                     </div>
                                 </div>
                             </div>
@@ -42,4 +42,4 @@ function Lithia() {
 }
 
 
-export default Lithia
+export default Fredbeans

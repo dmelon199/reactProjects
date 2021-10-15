@@ -5,7 +5,7 @@ import SkillsList from './SkillsList';
 function Skills() {
     return ( 
         <div className="skills-wrapper d-flex flex-column p-5">
-            <h1 className="widget-heading">Things I Dabble in from time to time...</h1>
+            <h1 className="widget-heading">Commonly Used Languages and Apps</h1>
             <div className="skills-content container-xl">
                     {Object.keys(skills).map(function(item) {
                         return (

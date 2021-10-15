@@ -3,7 +3,7 @@ import React from 'react'
 function Education() {
     return ( 
         <div className="my-education-wrapper d-flex flex-column p-5">
-            <h1 className="widget-heading">I Miss College</h1>
+            <h1 className="widget-heading">My College Education</h1>
             <div className="my-education-content d-flex container-xl pt-5">    
                 <div>
                     <img style={{width:"70%"}} src="/images/champ.png" alt="Champlain College Logo" title="Champlain College"/>
