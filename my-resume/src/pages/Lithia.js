@@ -1,6 +1,7 @@
 
 import React from "react"
-import ImageRotate from "../components/ImageRotate"
+import ImageRotateDesktop from "../components/ImageRotateDesktop"
+import ImageRotateMobile from "../components/ImageRotateMobile"
 
 const desktopImages = [
     { id: 1, name:'INDEX', url: '/images/desktop/lithia-index.jpg', height:'3152px' },
@@ -10,9 +11,9 @@ const desktopImages = [
 ]
 
 const mobileImages = [
-    { id: 5, name:'mobile-INDEX', url: '/images/mobile/lithia-mobile-index.jpg', height:'6674px' },
-    { id: 6, name:'mobile-VLP', url: '/images/mobile/avondale-mobile-index.jpg', height:'4791px' },
-    { id: 7, name:'mobile-VDP', url: '/images/mobile/saltlake-mobile-index.jpg', height:'4354px' },
+    { id: 5, name:'INDEX', url: '/images/mobile/lithia-mobile-index.jpg', height:'6674px' },
+    { id: 6, name:'VLP', url: '/images/mobile/avondale-mobile-index.jpg', height:'4791px' },
+    { id: 7, name:'VDP', url: '/images/mobile/saltlake-mobile-index.jpg', height:'4354px' },
 ]
 
 
@@ -21,7 +22,8 @@ function Lithia() {
         <div>
             <div className="body-content container-xl py-5">
                 <h1>Lithia Motors Desktop and Mobile Mockups</h1>
-                <ImageRotate images={desktopImages, mobileImages} />
+                <ImageRotateDesktop images={desktopImages} />
+                <ImageRotateMobile images={mobileImages} />
             </div>
         </div>
     )
