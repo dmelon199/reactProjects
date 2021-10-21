@@ -27,13 +27,13 @@ const ImageCarouselMobile = ({ images }) => {
 
   return (
     <div>
-			<div className="mobile-wrapper">
+			<div className="mobile-wrapper py-5">
 			<h2>Mobile:</h2>
 				<div className="mobile-skin">
 					<div className="mobile-skin-overlay" style={{backgroundImage: "url('/images/mobile.png')", backgroundSize: "100%", backgroundRepeat: "no-repeat"}}></div>
 						<div className="mobile-viewport">
 					 		<div className="mobile_screen">
-								<div className="mobile-scroll-wrap" tabIndex="5003">
+								<div className="mobile-scroll-wrap">
 									<div className="selected-image-mobile" style={{ backgroundImage: `url(${selectedImage?.url})`, height:`${selectedImage?.height}` }}/>
 								</div>
 							</div>

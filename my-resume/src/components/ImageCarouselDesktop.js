@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import Scroll from '../components/Scroll';
 
 
 const ImageCarouselDesktop = ({ images }) => {
@@ -22,6 +23,13 @@ const ImageCarouselDesktop = ({ images }) => {
     if (images && images.length > 0) {
       setSelectedImage(images[newIdx]);
       setSelectedImageIndex(newIdx);
+      if (carouselItemsRef?.current[newIdx]) {
+        carouselItemsRef?.current[newIdx]?.scrollIntoView({
+          block: "start",
+          inline: "nearest",
+          behavior: "smooth",
+        });
+      }
     }
   };
 
@@ -33,7 +41,7 @@ const ImageCarouselDesktop = ({ images }) => {
           <div className="skin-overlay" style={{backgroundImage: "url('/images/desktop.png')", backgroundSize: "100%", backgroundRepeat: "no-repeat"}}></div>
             <div className="viewport">
               <div className="desktop_screen">
-                <div className="scroll-wrap" tabIndex="5003">
+                <div className="scroll-wrap">
                   <div className="selected-image-desktop" style={{ backgroundImage: `url(${selectedImage?.url})`, height:`${selectedImage?.height}` }}/>
                 </div>
               </div>
@@ -42,6 +50,7 @@ const ImageCarouselDesktop = ({ images }) => {
       </div>
       <div className="carousel desktop">
         <div className="carousel-images">
+          <Scroll />
           {images &&
             images.map((desktopImages, idx) => (
               <div
