@@ -7,9 +7,6 @@ import Skills from '../components/Skills';
 import MyResume from '../components/MyResume';
 import Education from '../components/Education';
 import MyProjects from '../components/MyProjects';
-import Test from '../components/Test';
-
-
 
 function MainPage() {
 

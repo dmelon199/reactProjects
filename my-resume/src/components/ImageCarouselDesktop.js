@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 
-const ImageRotateDesktop = ({ images }) => {
+const ImageCarouselDesktop = ({ images }) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState();
   const carouselItemsRef = useRef([]);
@@ -58,4 +58,4 @@ const ImageRotateDesktop = ({ images }) => {
   );
 };
 
-export default ImageRotateDesktop;
+export default ImageCarouselDesktop;

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Scroll from '../components/Scroll';
 
-const ImageRotate = ({ images }) => {
+const ImageCarousel = ({ images }) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState();
   const carouselItemsRef = useRef([]);
@@ -85,4 +85,4 @@ const ImageRotate = ({ images }) => {
   );
 };
 
-export default ImageRotate;
+export default ImageCarousel;

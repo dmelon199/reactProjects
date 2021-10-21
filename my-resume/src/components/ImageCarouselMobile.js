@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 
-const ImageRotateMobile = ({ images }) => {
+const ImageCarouselMobile = ({ images }) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState();
   const carouselItemsRef = useRef([]);
@@ -58,5 +58,5 @@ const ImageRotateMobile = ({ images }) => {
 	);
 };
 
-export default ImageRotateMobile;
+export default ImageCarouselMobile;
 

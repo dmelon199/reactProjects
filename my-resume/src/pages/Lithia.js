@@ -1,7 +1,7 @@
 
 import React from "react"
-import ImageRotateDesktop from "../components/ImageRotateDesktop"
-import ImageRotateMobile from "../components/ImageRotateMobile"
+import ImageCarouselDesktop from "../components/ImageCarouselDesktop"
+import ImageCarouselMobile from "../components/ImageCarouselMobile"
 
 const desktopImages = [
     { id: 1, name:'INDEX', url: '/images/desktop/lithia-index.jpg', height:'3152px' },
@@ -22,8 +22,8 @@ function Lithia() {
         <div>
             <div className="body-content container-xl py-5">
                 <h1>Lithia Motors Desktop and Mobile Mockups</h1>
-                <ImageRotateDesktop images={desktopImages} />
-                <ImageRotateMobile images={mobileImages} />
+                <ImageCarouselDesktop images={desktopImages} />
+                <ImageCarouselMobile images={mobileImages} />
             </div>
         </div>
     )
