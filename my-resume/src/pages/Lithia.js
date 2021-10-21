@@ -10,9 +10,9 @@ const desktopImages = [
 ]
 
 const mobileImages = [
-    { id: 1, name:'INDEX', url: '/images/mobile/lithia-mobile-index.jpg', height:'6674px' },
-    { id: 2, name:'VLP', url: '/images/mobile/avondale-mobile-index.jpg', height:'4791px' },
-    { id: 3, name:'VDP', url: '/images/mobile/saltlake-mobile-index.jpg', height:'4354px' },
+    { id: 5, name:'mobile-INDEX', url: '/images/mobile/lithia-mobile-index.jpg', height:'6674px' },
+    { id: 6, name:'mobile-VLP', url: '/images/mobile/avondale-mobile-index.jpg', height:'4791px' },
+    { id: 7, name:'mobile-VDP', url: '/images/mobile/saltlake-mobile-index.jpg', height:'4354px' },
 ]
 
 
