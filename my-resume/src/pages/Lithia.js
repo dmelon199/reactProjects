@@ -1,5 +1,6 @@
 
 import React from "react"
+import ImageRotate from "../components/ImageRotate"
 
 function Lithia() {
     return (
@@ -21,6 +22,7 @@ function Lithia() {
                         </div>
                     </div>
                 </div>
+                <ImageRotate />
                 <div className="mobile-wrapper">
                     <h2>Mobile:</h2>
                     <div className="mobile-skin">

@@ -28,8 +28,8 @@ function Avondale() {
                         <div className="mobile-viewport">
                             <div className="mobile_screen">
                                 <div className="mobile-scroll-wrap" tabIndex="5003">
-                                    <div height="6674px">
-                                        <img src="/images/mobile/lithia-mobile-index.jpg" height="6674px" width="365px"/>
+                                    <div height="auto">
+                                        <img src="/images/mobile/avondale-mobile-index.jpg" height="auto" width="365px"/>
                                     </div>
                                 </div>
                             </div>

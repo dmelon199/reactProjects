@@ -9,7 +9,7 @@ function Header() {
                 <ul className="nav px-5">
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/'>Projects</Link></li>
-                    <li><Link to='/'>Resume</Link></li>
+                    <li><a href='/images/resume-test.pdf' target="_BLANK">Resume</a></li>
                 </ul>
             </navbar>
         </header>
