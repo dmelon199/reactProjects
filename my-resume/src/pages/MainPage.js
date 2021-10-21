@@ -8,23 +8,19 @@ import MyResume from '../components/MyResume';
 import Education from '../components/Education';
 import MyProjects from '../components/MyProjects';
 
-function MainPage() {
-
-
+const MainPage = () => {
   return (
-
-        <div>
-          <div className="body px-5">
-            <WelcomeSection />
-            <div className="body-content">
-              <MyProjects />
-              <Skills />
-              <MyResume />
-              <Education />
-            </div>
-          </div>
+    <div>
+      <div className="body px-5">
+      <WelcomeSection />
+        <div className="body-content">
+          <MyProjects />
+          <Skills />
+          <MyResume />
+          <Education />
         </div>
-
+      </div>
+    </div>
   );
 }
 

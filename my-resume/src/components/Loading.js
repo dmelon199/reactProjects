@@ -1,7 +1,7 @@
 import React from 'react'
 import Roll from 'react-reveal/Roll';
 
-function LoadingScreen() {
+const LoadingScreen = () => {
     return ( 
         <div className="loading-screen">
             <Roll>

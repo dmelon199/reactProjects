@@ -21,7 +21,7 @@ import Luther from "./pages/Luther";
 import Carter from "./pages/Carter";
 import LoadingScreen from './components/Loading';
 
-function App() {
+const App = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {

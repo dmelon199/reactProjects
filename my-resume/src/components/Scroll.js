@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
 
-function Scroll({ history }) {
+const Scroll = ({ history }) => {
   useEffect(() => {
     const unlisten = history.listen(() => {
       window.scrollTo(0, 0);

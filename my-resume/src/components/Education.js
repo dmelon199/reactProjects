@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Education() {
+const Education = () => {
     return ( 
         <div className="my-education-wrapper d-flex flex-column p-5">
             <h1 className="widget-heading">My College Education</h1>

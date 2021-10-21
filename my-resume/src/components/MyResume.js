@@ -2,7 +2,7 @@ import React from 'react'
 import Positions from './Positions';
 import jobInfo from '../jobInfo';
 
-function MyResume(props) {
+const MyResume = (props) => {
     return ( 
         <div className="experience-wrapper d-flex flex-column px-5 py-3">
             <h1 className="widget-heading">My Real World Experience</h1>

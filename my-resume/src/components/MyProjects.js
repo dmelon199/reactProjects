@@ -24,7 +24,8 @@ const responsive = {
     items: 1
   }
 };
-function MyProjects() {
+
+const MyProjects = () => {
     return (
       <div className='slideshow wrapper p-5'>
         <h1>My Projects</h1>
