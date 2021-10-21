@@ -2,42 +2,26 @@
 import React from "react"
 import ImageRotate from "../components/ImageRotate"
 
+const desktopImages = [
+    { id: 1, name:'INDEX', url: '/images/desktop/lithia-index.jpg', height:'3152px' },
+    { id: 2, name:'VLP', url: '/images/desktop/avondale-index.jpg', height:'3208px' },
+    { id: 3, name:'VDP', url: '/images/desktop/ogara-index-1.jpg', height:'2004px' },
+    { id: 4, name:'BRAND', url: '/images/desktop/carter-index.jpg', height:'2854px' },
+]
+
+const mobileImages = [
+    { id: 1, name:'INDEX', url: '/images/mobile/lithia-mobile-index.jpg', height:'6674px' },
+    { id: 2, name:'VLP', url: '/images/mobile/avondale-mobile-index.jpg', height:'4791px' },
+    { id: 3, name:'VDP', url: '/images/mobile/saltlake-mobile-index.jpg', height:'4354px' },
+]
+
+
 function Lithia() {
     return (
         <div>
             <div className="body-content container-xl py-5">
                 <h1>Lithia Motors Desktop and Mobile Mockups</h1>
-                <div className="desktop-wrapper py-5">
-                    <h2>Desktop:</h2>
-                    <div className="desktop-skin">
-                        <div className="skin-overlay" style={{backgroundImage: "url('/images/desktop.png')", backgroundSize: "100%", backgroundRepeat: "no-repeat"}}></div>
-                        <div className="viewport">
-                            <div className="desktop_screen">
-                                <div className="scroll-wrap" tabIndex="5003">
-                                    <div height="auto">
-                                        <img src="/images/desktop/lithia-index.jpg" height="auto" width="1015px"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <ImageRotate />
-                <div className="mobile-wrapper">
-                    <h2>Mobile:</h2>
-                    <div className="mobile-skin">
-                        <div className="mobile-skin-overlay" style={{backgroundImage: "url('/images/mobile.png')", backgroundSize: "100%", backgroundRepeat: "no-repeat"}}></div>
-                        <div className="mobile-viewport">
-                            <div className="mobile_screen">
-                                <div className="mobile-scroll-wrap" tabIndex="5003">
-                                    <div height="6674px">
-                                        <img src="/images/mobile/lithia-mobile-index.jpg" height="6674px" width="365px"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <ImageRotate images={desktopImages, mobileImages} />
             </div>
         </div>
     )

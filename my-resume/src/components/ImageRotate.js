@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import Scroll from '../components/Scroll';
 
 const ImageRotate = ({ images }) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
@@ -21,33 +22,60 @@ const ImageRotate = ({ images }) => {
     if (images && images.length > 0) {
       setSelectedImage(images[newIdx]);
       setSelectedImageIndex(newIdx);
-      if (carouselItemsRef?.current[newIdx]) {
-        carouselItemsRef?.current[newIdx]?.scrollIntoView({
-          inline: "center",
-          behavior: "smooth"
-        });
-      }
     }
   };
 
   return (
-    <div className="carousel-container">
-      <h2 className="header">Image Carousel</h2>
-      <div
-        className="selected-image"
-        style={{ backgroundImage: `url(${selectedImage?.url})` }}
-      />
-      <div className="carousel">
-        <div className="carousel__images">
+    <div>
+      <div className="desktop-wrapper py-5">
+      <h2>Desktop:</h2>
+        <div className="desktop-skin">
+          <div className="skin-overlay" style={{backgroundImage: "url('/images/desktop.png')", backgroundSize: "100%", backgroundRepeat: "no-repeat"}}></div>
+            <div className="viewport">
+              <div className="desktop_screen">
+                <div className="scroll-wrap" tabIndex="5003">
+                  <div className="selected-image-desktop" style={{ backgroundImage: `url(${selectedImage?.url})`, height:`${selectedImage?.height}` }}/>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div className="carousel desktop">
+        <div className="carousel-images">
           {images &&
-            images.map((image, idx) => (
+            images.map((desktopImages, idx) => (
               <div
                 onClick={() => handleSelectedImageChange(idx)}
-                style={{ backgroundImage: `url(${image.url})` }}
-                key={image.id}
-                className={`carousel__image ${
-                  selectedImageIndex === idx && "carousel__image-selected"
-                }`}
+                style={{ backgroundImage: `url(${desktopImages.url})` }}
+                key={desktopImages.id}
+                className={`carousel-image desktop ${selectedImageIndex === idx && "carousel-image-selected"}`}
+                ref={(el) => (carouselItemsRef.current[idx] = el)}
+              />
+            ))}
+        </div>
+      </div>
+      <div className="mobile-wrapper">
+        <h2>Mobile:</h2>
+          <div className="mobile-skin">
+            <div className="mobile-skin-overlay" style={{backgroundImage: "url('/images/mobile.png')", backgroundSize: "100%", backgroundRepeat: "no-repeat"}}></div>
+              <div className="mobile-viewport">
+                 <div className="mobile_screen">
+                    <div className="mobile-scroll-wrap" tabIndex="5003">
+                      <div className="selected-image-mobile" style={{ backgroundImage: `url(${selectedImage?.url})`, height:`${selectedImage?.height}` }}/>
+                    </div>
+                  </div>
+                </div>
+             </div>
+          </div>
+      <div className="carousel mobile">
+        <div className="carousel-images">
+          {images &&
+            images.map((mobileImages, idx) => (
+              <div
+                onClick={() => handleSelectedImageChange(idx)}
+                style={{ backgroundImage: `url(${mobileImages.url})` }}
+                key={mobileImages.id}
+                className={`carousel-image mobile ${selectedImageIndex === idx && "carousel-image-selected"}`}
                 ref={(el) => (carouselItemsRef.current[idx] = el)}
               />
             ))}
