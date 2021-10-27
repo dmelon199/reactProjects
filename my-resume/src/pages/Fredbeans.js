@@ -1,44 +1,36 @@
-
 import React from "react"
+import ImageCarouselDesktop from "../components/ImageCarouselDesktop"
+import ImageCarouselMobile from "../components/ImageCarouselMobile"
+
+const desktopImages = [
+  { id: 1, name:'INDEX', url: '/images/desktop/fredbeans/fredbeans-INDEX.jpg', height:'4162px' },
+  { id: 2, name:'INDEX2', url: '/images/desktop/fredbeans/fredbeans-INDEX-2.jpg', height:'3956px' },
+  { id: 3, name:'SRP', url: '/images/desktop/fredbeans/fredbeans-SRP.jpg', height:'2237px' },
+  { id: 4, name:'VDP', url: '/images/desktop/fredbeans/fredbeans-VDP.jpg', height:'2435px' },
+  { id: 5, name:'SERVICE', url: '/images/desktop/fredbeans/fredbeans-SERVICE.jpg', height:'3344px' },
+  { id: 6, name:'CAREERS', url: '/images/desktop/fredbeans/fredbeans-CAREERS.jpg', height:'3195px' },
+]
+
+const mobileImages = [
+    { id: 1, name:'INDEX', url: '/images/mobile/fredbeans/fredbeans-INDEX-mobile.jpg', height:'7989px' },
+    { id: 2, name:'INDEX2', url: '/images/mobile/fredbeans/fredbeans-INDEX-2-mobile.jpg', height:'5323px' },
+    { id: 3, name:'SRP', url: '/images/mobile/fredbeans/fredbeans-SRP-mobile.jpg', height:'4343px' },
+    { id: 4, name:'VDP', url: '/images/mobile/fredbeans/fredbeans-VDP-mobile.jpg', height:'2727px' },
+    { id: 5, name:'SERVICE', url: '/images/mobile/fredbeans/fredbeans-SERVICE-mobile.jpg', height:'4150px' },
+    { id: 6, name:'CAREERS', url: '/images/mobile/fredbeans/fredbeans-CAREERS-mobile.jpg', height:'3649px' },
+]
+
 
 const Fredbeans = () => {
-	return (
-		<div>
-			<div className="body-content container-xl py-5">
-				<h1>Fred Beans Auto Group Desktop and Mobile Mockups</h1>
-				<div className="desktop-wrapper py-5">
-					<h2>Desktop:</h2>
-					<div className="desktop-skin">
-						<div className="skin-overlay" style={{backgroundImage: "url('/images/desktop.png')", backgroundSize: "100%", backgroundRepeat: "no-repeat"}}></div>
-						<div className="viewport">
-							<div className="desktop_screen">
-								<div className="scroll-wrap" tabIndex="5003">
-									<div height="auto">
-										<img src="/images/desktop/fredbeans-index.jpg" height="auto" width="1015px"/>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="mobile-wrapper">
-					<h2>Mobile:</h2>
-					<div className="mobile-skin">
-						<div className="mobile-skin-overlay" style={{backgroundImage: "url('/images/mobile.png')", backgroundSize: "100%", backgroundRepeat: "no-repeat"}}></div>
-						<div className="mobile-viewport">
-							<div className="mobile_screen">
-								<div className="mobile-scroll-wrap" tabIndex="5003">
-									<div height="6674px">
-										<img src="/images/mobile/saltlake-mobile-index.jpg" height="auto" width="365px"/>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	)
+  return (
+    <div>
+      <div className="body-content container-xl py-5">
+      <h1>Fredbeans Desktop & Mobile Mockups</h1>
+        <ImageCarouselDesktop images={desktopImages} />
+        <ImageCarouselMobile images={mobileImages} />
+      </div>
+    </div>
+  )
 }
 
 

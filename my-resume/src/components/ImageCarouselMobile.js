@@ -34,7 +34,7 @@ const ImageCarouselMobile = ({ images }) => {
 						<div className="mobile-viewport">
 					 		<div className="mobile_screen">
 								<div className="mobile-scroll-wrap">
-									<div className="selected-image-mobile" style={{ backgroundImage: `url(${selectedImage?.url})`, height:`${selectedImage?.height}` }}/>
+									<div className="selected-image-mobile" style={{ backgroundImage: `url(${selectedImage?.url})`, height:`${selectedImage?.height}`, backgroundRepeat: 'no-repeat' }}/>
 								</div>
 							</div>
 						</div>
@@ -46,7 +46,7 @@ const ImageCarouselMobile = ({ images }) => {
 					images.map((mobileImages, idx) => (
 					<div
 						onClick={() => handleSelectedImageChange(idx)}
-						style={{ backgroundImage: `url(${mobileImages.url})` }}
+						style={{ backgroundImage: `url(${mobileImages.url})`, backgroundRepeat: 'no-repeat' }}
 						key={mobileImages.id}
 						className={`carousel-image mobile ${selectedImageIndex === idx && "carousel-image-selected"}`}
 						ref={(el) => (carouselItemsRef.current[idx] = el)}

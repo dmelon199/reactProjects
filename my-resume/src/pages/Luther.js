@@ -1,42 +1,31 @@
 
 import React from "react"
+import ImageCarouselDesktop from "../components/ImageCarouselDesktop"
+import ImageCarouselMobile from "../components/ImageCarouselMobile"
+
+const desktopImages = [
+  { id: 1, name:'INDEX', url: '/images/desktop/luther/luther-INDEX.jpg', height:'2902px' },
+  { id: 2, name:'INDEX2', url: '/images/desktop/luther/luther-INDEX-2.jpg', height:'2902px' },
+  { id: 3, name:'SRP', url: '/images/desktop/luther/luther-SRP.jpg', height:'2308px' },
+  { id: 4, name:'VDP', url: '/images/desktop/luther/luther-VDP.jpg', height:'3306px' },
+]
+
+const mobileImages = [
+    { id: 1, name:'INDEX', url: '/images/mobile/luther/luther-INDEX-mobile.jpg', height:'3734px' },
+    { id: 2, name:'INDEX', url: '/images/mobile/luther/luther-INDEX-2-mobile.jpg', height:'3734px' },
+    { id: 3, name:'SRP', url: '/images/mobile/luther/luther-SRP-mobile.jpg', height:'3931px' },
+    { id: 4, name:'VDP', url: '/images/mobile/luther/luther-VDP-mobile.jpg', height:'2605px' },
+]
+
 
 const Luther = () => {
   return (
     <div>
-        <div className="body-content container-xl py-5">
-            <h1>Luther Automotive Desktop and Mobile Mockups</h1>
-            <div className="desktop-wrapper py-5">
-                <h2>Desktop:</h2>
-                <div className="desktop-skin">
-                    <div className="skin-overlay" style={{backgroundImage: "url('/images/desktop.png')", backgroundSize: "100%", backgroundRepeat: "no-repeat"}}></div>
-                    <div className="viewport">
-                        <div className="desktop_screen">
-                            <div className="scroll-wrap" tabIndex="5003">
-                                <div height="auto">
-                                    <img src="/images/desktop/luther-index.jpg" height="auto" width="1015px"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="mobile-wrapper">
-                <h2>Mobile:</h2>
-                <div className="mobile-skin">
-                    <div className="mobile-skin-overlay" style={{backgroundImage: "url('/images/mobile.png')", backgroundSize: "100%", backgroundRepeat: "no-repeat"}}></div>
-                    <div className="mobile-viewport">
-                        <div className="mobile_screen">
-                            <div className="mobile-scroll-wrap" tabIndex="5003">
-                                <div height="6674px">
-                                    <img src="/images/mobile/saltlake-mobile-index.jpg" height="auto" width="365px"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div className="body-content container-xl py-5">
+      <h1>Luther Automotive Desktop & Mobile Mockups</h1>
+        <ImageCarouselDesktop images={desktopImages} />
+        <ImageCarouselMobile images={mobileImages} />
+      </div>
     </div>
   )
 }

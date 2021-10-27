@@ -55,7 +55,7 @@ const ImageCarouselDesktop = ({ images }) => {
             images.map((desktopImages, idx) => (
               <div
                 onClick={() => handleSelectedImageChange(idx)}
-                style={{ backgroundImage: `url(${desktopImages.url})` }}
+                style={{ backgroundImage: `url(${desktopImages.url})`, backgroundRepeat: 'no-repeat' }}
                 key={desktopImages.id}
                 className={`carousel-image desktop ${selectedImageIndex === idx && "carousel-image-selected"}`}
                 ref={(el) => (carouselItemsRef.current[idx] = el)}

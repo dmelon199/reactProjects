@@ -1,44 +1,34 @@
-
 import React from "react"
+import ImageCarouselDesktop from "../components/ImageCarouselDesktop"
+import ImageCarouselMobile from "../components/ImageCarouselMobile"
+
+const desktopImages = [
+  { id: 1, name:'INDEX', url: '/images/desktop/cartermyers/carter-INDEX.jpg', height:'2854px' },
+  { id: 2, name:'SRP', url: '/images/desktop/cartermyers/carter-SRP.jpg', height:'2137px' },
+  { id: 3, name:'VDP', url: '/images/desktop/cartermyers/carter-VDP.jpg', height:'2918px' },
+  { id: 4, name:'COMMUNITY', url: '/images/desktop/cartermyers/carter-COMMUNITY.jpg', height:'4024px' },
+  { id: 5, name:'CAREERS', url: '/images/desktop/cartermyers/carter-CAREERS.jpg', height:'2008px' },
+]
+
+const mobileImages = [
+    { id: 1, name:'INDEX', url: '/images/mobile/cartermyers/carter-INDEX-mobile.jpg', height:'3734px' },
+    { id: 2, name:'SRP', url: '/images/mobile/cartermyers/carter-SRP-mobile.jpg', height:'3931px' },
+    { id: 3, name:'VDP', url: '/images/mobile/cartermyers/carter-VDP-mobile.jpg', height:'2605px' },
+    { id: 4, name:'COMMUNITY', url: '/images/mobile/cartermyers/carter-COMMUNITY-mobile.jpg', height:'6257px' },
+    { id: 5, name:'CAREER', url: '/images/mobile/cartermyers/carter-CAREER-mobile.jpg', height:'4156px' },
+]
+
 
 const Carter = () => {
-	return (
-		<div>
-			<div className="body-content container-xl py-5">
-				<h1>Carter Meyers Desktop and Mobile Mockups</h1>
-				<div className="desktop-wrapper py-5">
-					<h2>Desktop:</h2>
-					<div className="desktop-skin">
-						<div className="skin-overlay" style={{backgroundImage: "url('/images/desktop.png')", backgroundSize: "100%", backgroundRepeat: "no-repeat"}}></div>
-						<div className="viewport">
-							<div className="desktop_screen">
-								<div className="scroll-wrap" tabIndex="5003">
-									<div height="auto">
-										<img src="/images/desktop/carter-index.jpg" height="auto" width="1015px"/>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="mobile-wrapper">
-					<h2>Mobile:</h2>
-					<div className="mobile-skin">
-						<div className="mobile-skin-overlay" style={{backgroundImage: "url('/images/mobile.png')", backgroundSize: "100%", backgroundRepeat: "no-repeat"}}></div>
-						<div className="mobile-viewport">
-							<div className="mobile_screen">
-								<div className="mobile-scroll-wrap" tabIndex="5003">
-									<div height="6674px">
-										<img src="/images/mobile/lithia-mobile-index.jpg" height="6674px" width="365px"/>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	)
+  return (
+    <div>
+      <div className="body-content container-xl py-5">
+      <h1>Carter Myers Automotive Desktop & Mobile Mockups</h1>
+        <ImageCarouselDesktop images={desktopImages} />
+        <ImageCarouselMobile images={mobileImages} />
+      </div>
+    </div>
+  )
 }
 
 
