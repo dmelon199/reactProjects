@@ -15,7 +15,7 @@ const desktopImages = [
 ]
 
 const mobileImages = [
-    { id: 1, name:'INDEX', url: '/images/mobile/ogara/ogara-INDEX-mobile.jpg', height:'2004px' },
+    { id: 1, name:'INDEX', url: '/images/mobile/ogara/ogara-INDEX-mobile.jpg', height:'4560px' },
     { id: 2, name:'INDEX2', url: '/images/mobile/ogara/ogara-INDEX-2-mobile.jpg', height:'3203px' },
     { id: 3, name:'INDEX3', url: '/images/mobile/ogara/ogara-INDEX-3-mobile.jpg', height:'3817px' },
     { id: 4, name:'SRP', url: '/images/mobile/ogara/ogara-SRP-mobile.jpg', height:'3667px' },
@@ -28,8 +28,8 @@ const mobileImages = [
 const Ogara = () => {
   return (
     <div>
-      <div className="body-content container-xl py-5">
-      <h1>Ogara Desktop & Mobile Mockups</h1>
+      <div className="body-content">
+      <h1 className="font-weight-bold bg-gray px-5 py-4">Ogara Coach</h1>
         <ImageCarouselDesktop images={desktopImages} />
         <ImageCarouselMobile images={mobileImages} />
       </div>

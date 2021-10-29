@@ -21,8 +21,8 @@ const mobileImages = [
 const Luther = () => {
   return (
     <div>
-      <div className="body-content container-xl py-5">
-      <h1>Luther Automotive Desktop & Mobile Mockups</h1>
+      <div className="body-content">
+      <h1 className="font-weight-bold bg-gray px-5 py-4">Luther Automotive</h1>
         <ImageCarouselDesktop images={desktopImages} />
         <ImageCarouselMobile images={mobileImages} />
       </div>

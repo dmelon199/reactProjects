@@ -5,19 +5,19 @@ import React from 'react'
 import WelcomeSection from '../components/WelcomeSection';
 import Skills from '../components/Skills';
 import MyResume from '../components/MyResume';
-import Education from '../components/Education';
+import MyEducation from '../components/MyEducation';
 import MyProjects from '../components/MyProjects';
 
 const MainPage = () => {
   return (
     <div>
-      <div className="body px-5">
+      <div className="body-page">
       <WelcomeSection />
         <div className="body-content">
           <MyProjects />
           <Skills />
           <MyResume />
-          <Education />
+          <MyEducation />
         </div>
       </div>
     </div>

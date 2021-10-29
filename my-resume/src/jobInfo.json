@@ -2,7 +2,7 @@
     "senior": {
         "position":"Senior Web Developer",
         "time":"January 2017 - Present",
-        "location":"Manhattan Beach, CA",
+        "location":"Manhattan Beach, California",
         "class":"senior",
         "description": [
           "Partnered closely with client and internal stakeholders to meet design and functional requirements within technological restraints.",
@@ -21,7 +21,7 @@
     "junior": {
         "position":"Web Developer II",
         "time":"January 2014 - January 2017",
-        "location":"Burlington, VT",
+        "location":"Burlington, Vermont",
         "class":"junior",
         "description": [
           "Inaugural website design and build for the Genesis Brand, launched for 250+ dealerships nationwide.",
@@ -33,7 +33,7 @@
     "intern": {
         "position":"Quality Assurance Intern",
         "time":"February 2013 – January 2014",
-        "location":"Burlington, VT",
+        "location":"Burlington, Vermont",
         "class":"intern",
         "description": [
           "Responsible for reviewing websites for accuracy: related to aesthetics, functionality, and content before sites are launched.",
