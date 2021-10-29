@@ -2,7 +2,7 @@ import React from 'react'
 import skills from '../skills';
 import SkillsList from './SkillsList';
 
-const Skills = () => {
+const MySkills = () => {
   return ( 
     <div className="skills-wrapper d-flex flex-column p-5 bg-gray">
       <h1 className="widget-heading">Commonly Used Languages and Apps</h1>
@@ -22,4 +22,4 @@ const Skills = () => {
 }
 
 
-export default Skills
+export default MySkills

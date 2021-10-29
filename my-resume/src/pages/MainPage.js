@@ -3,7 +3,7 @@ import React from 'react'
 
 /* COMPONENTS */
 import WelcomeSection from '../components/WelcomeSection';
-import Skills from '../components/Skills';
+import MySkills from '../components/MySkills';
 import MyResume from '../components/MyResume';
 import MyEducation from '../components/MyEducation';
 import MyProjects from '../components/MyProjects';
@@ -15,7 +15,7 @@ const MainPage = () => {
       <WelcomeSection />
         <div className="body-content">
           <MyProjects />
-          <Skills />
+          <MySkills />
           <MyResume />
           <MyEducation />
         </div>

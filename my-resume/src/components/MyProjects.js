@@ -33,48 +33,48 @@ const MyProjects = () => {
           <div className='slide'>
             <Link to='/lithia'>
               <img style={{width: "100%"}} src="/photoshop-files/sites/lithia.png"/>
-              <h3 className='mt-3 text-center'>Lithia Motors</h3>
+              <h3 className='pt-3 text-center'>Lithia Motors</h3>
             </Link>
           </div>
           <div className='slide'>
             <Link to='/salt-lake-city'>
               <img style={{width: "100%"}} src="/photoshop-files/sites/salt-lake.png"/>
-              <h3 className='mt-3 text-center'>Salt Lake City Motorcars</h3>
+              <h3 className='pt-3 text-center'>Salt Lake City Motorcars</h3>
             </Link>
           </div>
           <div className='slide'>
             <Link to ='/avondale-select'>
               <img style={{width: "100%"}} src="/photoshop-files/sites/avondale.png"/>
-              <h3 className='mt-3 text-center'>Avondale Select</h3>
+              <h3 className='pt-3 text-center'>Avondale Select</h3>
             </Link>
           </div>
           <div className='slide'>
             <Link to ='/ogara-coach'>
               <img style={{width: "100%"}} src="/photoshop-files/sites/ogara.png"/>
-              <h3 className='mt-3 text-center'>O'Gara Coach</h3>
+              <h3 className='pt-3 text-center'>O'Gara Coach</h3>
             </Link>
           </div>
           <div className='slide'>
             <Link to ='/fredbeans'>
               <img style={{width: "100%"}} src="/photoshop-files/sites/fredbeans.png"/>
-              <h3 className='mt-3 text-center'>Fred Beans Auto Group</h3>
+              <h3 className='pt-3 text-center'>Fred Beans Auto Group</h3>
             </Link>
           </div>
           <div className='slide'>
             <Link to ='/carter-meyers'>
               <img style={{width: "100%"}} src="/photoshop-files/sites/carter.png"/>
-              <h3 className='mt-3 text-center'>Carter Meyers Automotive</h3>
+              <h3 className='pt-3 text-center'>Carter Meyers Automotive</h3>
             </Link>
           </div>
           <div className='slide'>
             <Link to ='/luther'>
               <img style={{width: "100%"}} src="/photoshop-files/sites/luther.png"/>
-              <h3 className='mt-3 text-center'>Luther Automotive</h3>
+              <h3 className='pt-3 text-center'>Luther Automotive</h3>
             </Link>
           </div>
           <div className='slide'>
             <img style={{width: "100%"}} src="/photoshop-files/sites/lithia.png"/>
-            <h3 className='mt-3 text-center'>Genesis</h3>
+            <h3 className='pt-3 text-center'>Genesis</h3>
           </div>
         </Carousel>
       </div>

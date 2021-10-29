@@ -13,9 +13,9 @@ const Header = () => {
 					<li><Link to='/'>Home</Link></li>
 					<li><Link to='/'>Projects</Link></li>
 					<li><a href='/images/resume-test.pdf' target="_BLANK">Resume</a></li>
-					<li><p>{date}</p></li>
 				</ul>
 			</navbar>
+			<p className="ml-auto">{date}</p>
 		</header>
 	)
 }
